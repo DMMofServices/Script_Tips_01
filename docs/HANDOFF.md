@@ -1,6 +1,6 @@
 # Handoff
 
-**Organização:** DMMofServices · **Repositório desde:** {{data de criação do repo}}
+**Organização:** DMMofServices · **Repositório desde:** 2026-08-27
 
 > Atualizado a cada fechamento de etapa. Serve pra qualquer pessoa (ou sessão de IA) retomar o projeto sem precisar recuperar contexto perdido.
 

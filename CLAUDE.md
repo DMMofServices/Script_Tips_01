@@ -1,4 +1,4 @@
-# CLAUDE.md — {{Nome do Projeto}}
+# CLAUDE.md — Script_Tips_01
 
 Este arquivo tem três camadas com regras de herança diferentes. Ao criar um projeto novo a partir deste template, cada camada é tratada de um jeito:
 
@@ -24,23 +24,7 @@ Este arquivo tem três camadas com regras de herança diferentes. Ao criar um pr
 
 ## [CONDICIONAL]
 
-Cada bloco abaixo só entra no `CLAUDE.md` final do projeto se confirmado sim na criação do repo. Pergunta-se um bloco por vez, não em lote.
-
-### Supabase
-
-- Grants explícitos após todo `CREATE TABLE`.
-- Idempotência em webhooks via claim atômico.
-- Client `service_role` isolado, server-only, para tabelas com PII.
-
-### Cloudflare Workers
-
-- Exigir `cache-status: MISS/EXPIRED` antes de reportar sucesso pós-deploy.
-- `Cache-Control` diferenciado entre admin/API e público.
-
-### Webhooks entre sistemas externos (ex.: Database Webhook do Supabase)
-
-- Secret compartilhado entre dois sistemas externos exige teste ponta a ponta depois de QUALQUER rotação — "cadastrado nos dois lados" não é o mesmo que "confirmado que os dois lados batem" (lição real, `desconforto-diario` `CONVENCOES.md` #75 — uma semana de falha silenciosa de newsletter por secret dessincronizado pós-rotação).
-- Se o provedor for Supabase: `select * from net._http_response order by created desc` é a fonte de evidência mais direta pra qualquer bug de Database Webhook — mais rápida que inferir por log do lado receptor.
+Nenhum bloco condicional herdado nesta criação (27/08/2026) — stack ainda não decidida: novo projeto Supabase a criar, domínio Cloudflare próprio ainda não definido, escopo de Resend incerto. Revisar e herdar os blocos pertinentes quando o projeto começar de verdade — texto completo de cada bloco em `DMMofServices/template-projeto` (`CLAUDE.md`).
 
 ## [PROJETO]
 

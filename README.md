@@ -18,5 +18,5 @@
 
 ## Documentação
 
-- [Handoff](docs/HANDOFF.md) — estado atual, dependências em aberto, próximos passos
+- [Handoff](docs/HANDOFF-SCRIPT_TIPS_01.md) — estado atual, dependências em aberto, próximos passos
 - [Convenções](docs/CONVENCOES.md) — decisões e padrões específicos deste projeto
